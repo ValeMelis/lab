@@ -1,6 +1,9 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+mod pages;
+use pages::{home::Home, games::Games};
+
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
     #[at("/")]
@@ -14,8 +17,8 @@ enum Route {
 
 fn switch(routes: Route) -> Html {
     match routes {
-        Route::Home => html!{"a"},
-        Route::Games => html!{"b"},
+        Route::Home => html! {<Home/>},
+        Route::Games => html! {<Games/>},
         Route::NotFound => html!{"c"}
     }
 }
