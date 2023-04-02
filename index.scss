@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+
+    body {
+        background: linear-gradient(to bottom, #000000 0%, #363636 100%);
+        font-family: 'Games', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0;
+
+        a {
+            color: #fff,
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+    }
+}
